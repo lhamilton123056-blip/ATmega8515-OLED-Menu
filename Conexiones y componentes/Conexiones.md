@@ -52,6 +52,13 @@ SC -> PB1(PIN 2) Diferencia con la otra pantalla
 **Dados los siguientes pines de transistores de 2N2222A hacer las conexiones**
 ![Imagen de display de 4 dígitos de cátodo común](Imagenes%20de%20componentes/Pines%20transistor%202N2222A.jpg)
 
+**Conexiones de Transistores(4)**
+
+PIN 1(EMISOR) -> GND
+
+PIN 2(BASE) -> Resistencia de 1kΩ -> PUERTOS DE C (PIN 21 A 24 del microcontrolador); esto se hace conectando la resistencia a la base del transistor(1 pata), la segunda pata irá a una columna vacía, donde en esa línea se conectará a los puertos de C(una sola conexion por transistor)
+
+
 
 
 ---
