@@ -27,7 +27,10 @@ RES -> PB3(PIN 4)
 DC -> PB2(PIN 3)
 
 SC -> PB0(PIN 1) Diferencia con la otra pantalla
+
+
 **Pantalla derecha**
+
 GND -> GND
 
 VCC -> VCC
@@ -51,6 +54,7 @@ SC -> PB1(PIN 2) Diferencia con la otra pantalla
 
 
 
+---
 ---
 
 
