@@ -54,7 +54,7 @@
 **Dados los siguientes pines de transistores de 2N2222A hacer las conexiones**
 ![Imagen de transistor](Imagenes%20de%20componentes/Pines%20transistor%202N2222A.jpg)
 
-**Conexiones de Transistores(4)**
+## Conexiones de Transistores(4)
 
     PIN 1(EMISOR) -> GND
 
@@ -103,14 +103,14 @@ PUERTOS DE A (PA0 - PA7):
     PA7 -> PIN 3
 
 
-**Conexion de microcontrolador padre a microcontrolador hijo**
+## Conexion de microcontrolador padre a microcontrolador hijo
 
     GND PADRE -> GND HIJO
 
     PIN 11 PADRE -> PIN 10 HIJO
 
 
-**Conexion de controlador infrarrojo (control remoto)**
+## Conexion de controlador infrarrojo (control remoto)
 
     PIN IZQUIERDO(-) -> GND
 
@@ -119,7 +119,7 @@ PUERTOS DE A (PA0 - PA7):
     PIN DERECHO (S) -> PIN 12
 
 
-**Conexion de pulsador (velocidades y cambios de números)**
+## Conexion de pulsador (velocidades y cambios de números)
 
     Cualquier pin(patita) del pulsador irá a GND, el pin(patita) contrario irá a PIN 13 de microcontrolador
 
@@ -131,7 +131,7 @@ PUERTOS DE A (PA0 - PA7):
 ## Conexiones del microcontrolador HIJO
 
 
-**Conexion de LEDS**
+## Conexion de LEDS
 
 Mediante resistencias de 330Ω hacer:
 Pata corta(catodo) -> resistencia que va a GND
@@ -156,7 +156,7 @@ Patas largas de LED(anodo):
     PA7 -> LED DE LA IZQUIERDA (1)
 
 
-**DIPS**
+## DIPS
 
 DIP IZQUIERDA
 
@@ -201,7 +201,7 @@ DIP DERECHA
     PB7 -> BIT 1 
 
 
-**BUZZER**
+## BUZZER
 
     PIN de lado de voltaje -> voltaje
 
@@ -214,7 +214,7 @@ DIP DERECHA
         PIN DE EN MEDIO() -> RESISTENCIA DE 1KΩ A LINEA VACIA, DE AHÍ CONECTAR A PIN 16 DEL MICROCONTROLADOR
 
 
-**LEDS DE COMPARACIONES**
+## LEDS DE COMPARACIONES
 
 LED IZQUIERDO:
 
@@ -230,7 +230,7 @@ LED DERECHO:
     PATA CORTA (CATODO) -> RESISTENCIA DE 1KΩ A GND
 
 
-**3 PULSADORES DE MICROCONTROLADOR HIJO**
+## 3 PULSADORES DE MICROCONTROLADOR HIJO
 
 PULSADOR DE VELOCIDAD:
 
@@ -251,3 +251,29 @@ PULSADOR DE INTERRUPCIÓN:
     CUALQUIER PATITA(PIN) -> PIN 12
 
     PATITA CONTRARIA -> GND
+
+
+## CONEXIONES DE DISPLAY
+
+**Dado el siguiente display de ánodo comun hacer las conexiones**
+
+![Imagen de display de 7 segmentos de ánodo comun](Imagenes%20de%20componentes/Display%20de%207%20segmentos%20de%20ánodo%20común.jpg)
+
+    Pin 3 de arriba(pin de en medio) va a VCC (voltaje)
+
+    PIN MICRO PA0 -> a (pin 4 de arriba)
+    
+    PIN MICRO PA1 -> b (pin 5 de arriba)
+    
+    PIN MICRO PA2 -> c (pin 4 de abajo)
+    
+    PIN MICRO PA3 -> d (pin 2 de abajo)
+    
+    PIN MICRO PA4 -> e (pin 1 de abajo)
+    
+    PIN MICRO PA5 -> f (pin 2 de arriba)
+    
+    PIN MICRO PA6 -> g (pin 1 de arriba) 
+    
+    PIN MICRO PA7 -> punto (pin 5 de abajo)
+
