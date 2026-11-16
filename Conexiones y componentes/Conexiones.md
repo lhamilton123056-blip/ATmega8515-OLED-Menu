@@ -52,7 +52,7 @@
 ![Imagen de display de 4 dígitos de cátodo común](Imagenes%20de%20componentes/Display%20de%204%20dígitos%20cátodo%20común.jpg)
 
 **Dados los siguientes pines de transistores de 2N2222A hacer las conexiones**
-![Imagen de display de 4 dígitos de cátodo común](Imagenes%20de%20componentes/Pines%20transistor%202N2222A.jpg)
+![Imagen de transistor](Imagenes%20de%20componentes/Pines%20transistor%202N2222A.jpg)
 
 **Conexiones de Transistores(4)**
 
@@ -129,3 +129,125 @@ PUERTOS DE A (PA0 - PA7):
 
 
 ## Conexiones del microcontrolador HIJO
+
+
+**Conexion de LEDS**
+
+Mediante resistencias de 330Ω hacer:
+Pata corta(catodo) -> resistencia que va a GND
+Pata larga(Anodo) -> PINES del microcontrolador
+
+Patas largas de LED(anodo):
+
+    PA0 -> LED DE LA DERECHA (8)
+
+    PA1 -> LED DE LA DERECHA (7)
+
+    PA2 -> LED (6)
+
+    PA3 -> LED (5)
+
+    PA4 -> LED DE EN MEDIO (4)
+
+    PA5 -> LED (3)
+
+    PA6 -> LED (2)
+
+    PA7 -> LED DE LA IZQUIERDA (1)
+
+
+**DIPS**
+
+DIP IZQUIERDA
+
+    Puertos de C
+
+    
+    PC0 -> BIT DE HASTA LA DERECHA (8)
+    
+    PC1 -> BIT 7
+    
+    PC2 -> BIT 6
+    
+    PC3 -> BIT 5 
+    
+    PC4 -> BIT 4 
+    
+    PC5 -> BIT 3 
+    
+    PC6 -> BIT 2 
+    
+    PC7 -> BIT 1 
+
+
+DIP DERECHA
+
+    Puertos de B
+
+    PB0 -> BIT DE HASTA LA DERECHA (8)
+
+    PB1 -> BIT 7
+    
+    PB2 -> BIT 6
+
+    PB3 -> BIT 5 
+    
+    PB4 -> BIT 4 
+    
+    PB5 -> BIT 3 
+    
+    PB6 -> BIT 2 
+    
+    PB7 -> BIT 1 
+
+
+**BUZZER**
+
+    PIN de lado de voltaje -> voltaje
+
+    PIN contrario -> PIN DERECHO DE TRANSISTOR(COLLECTOR)
+
+    Transistor:
+
+        PIN IZQUIERDO() -> GND
+
+        PIN DE EN MEDIO() -> RESISTENCIA DE 1KΩ A LINEA VACIA, DE AHÍ CONECTAR A PIN 16 DEL MICROCONTROLADOR
+
+
+**LEDS DE COMPARACIONES**
+
+LED IZQUIERDO:
+
+    PATA LARGA (ANODO) -> PIN 17 DE MICROCONTROLADOR
+
+    PATA CORTA (CATODO) -> RESISTENCIA DE 1KΩ A GND
+
+
+LED DERECHO:
+
+    PARA LARGA (ANODO) -> PIN 15 DE MIRCOCONTROLADOR
+
+    PATA CORTA (CATODO) -> RESISTENCIA DE 1KΩ A GND
+
+
+**3 PULSADORES DE MICROCONTROLADOR HIJO**
+
+PULSADOR DE VELOCIDAD:
+
+    CUALQUIER PATITA(PIN) -> PIN 13
+
+    PATITA CONTRARIA(PIN) -> GND
+
+
+PULSADOR DE O Y 1 (LECTURA DE 0 Y 1):
+
+    CUALQUIER PATITA(PIN) -> PIN 14
+
+    PATITA CONTRARIA -> GND
+
+
+PULSADOR DE INTERRUPCIÓN:
+
+    CUALQUIER PATITA(PIN) -> PIN 12
+
+    PATITA CONTRARIA -> GND
